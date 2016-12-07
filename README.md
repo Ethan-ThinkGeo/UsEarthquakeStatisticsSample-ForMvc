@@ -1,4 +1,4 @@
-# UsEarthquakeStatisticsSample-ForMvc
+# Us Earthquake Statistics Sample Template for Mvc
 
 ### Description
 
