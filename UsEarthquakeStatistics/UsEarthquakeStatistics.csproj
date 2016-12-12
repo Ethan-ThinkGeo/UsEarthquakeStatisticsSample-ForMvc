@@ -237,6 +237,16 @@
       <SubType>Designer</SubType>
     </Content>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteSDK-WLM\MapSuiteSDK-WLM.csproj">
+      <Project>{bc3c1d57-2df4-4945-b8ee-d0fee11dd0fa}</Project>
+      <Name>MapSuiteSDK-WLM</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\SourceCode\MapSuite10.0\MapSuite\Mvc\MvcSDK-WLM\MvcSDK-WLM.csproj">
+      <Project>{37a6b130-2f59-45cf-b064-044eea5c18e4}</Project>
+      <Name>MvcSDK-WLM</Name>
+    </ProjectReference>
+  </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
