@@ -5,24 +5,7 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "UsEarthquakeStatistics", "UsEarthquakeStatistics\UsEarthquakeStatistics.csproj", "{A25D7400-9F13-45A9-A8D0-94A0B136D378}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MapSuiteSDK-WLM", "..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteSDK-WLM\MapSuiteSDK-WLM.csproj", "{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}"
-EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MvcSDK-WLM", "..\..\SourceCode\MapSuite10.0\MapSuite\Mvc\MvcSDK-WLM\MvcSDK-WLM.csproj", "{37A6B130-2F59-45CF-B064-044EEA5C18E4}"
-EndProject
-Project("{D954291E-2A0B-460D-934E-DC6B0785DB48}") = "MapSuiteLicense-Pcl", "..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteLicense-Pcl\MapSuiteLicense-Pcl.shproj", "{40469258-6FDB-425E-8204-EF09158A17F4}"
-EndProject
 Global
-	GlobalSection(SharedMSBuildProjectFiles) = preSolution
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\Layers\GoogleMaps\GoogleMaps-Pcl\GoogleMaps-Pcl.projitems*{37a6b130-2f59-45cf-b064-044eea5c18e4}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\Layers\Wms\Wms-Pcl\Wms-Pcl.projitems*{37a6b130-2f59-45cf-b064-044eea5c18e4}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\Layers\WorldMapKit\WorldMapKit-Pcl\WorldMapKit-Pcl.projitems*{37a6b130-2f59-45cf-b064-044eea5c18e4}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\Layers\WorldStreetsAndImagery\WorldStreetsAndImagery-Pcl\WorldStreetsAndImagery-Pcl.projitems*{37a6b130-2f59-45cf-b064-044eea5c18e4}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteLicense-Pcl\MapSuiteLicense-Pcl.projitems*{37a6b130-2f59-45cf-b064-044eea5c18e4}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteLicense-Pcl\MapSuiteLicense-Pcl.projitems*{40469258-6fdb-425e-8204-ef09158a17f4}*SharedItemsImports = 13
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteLicense-Pcl\MapSuiteLicense-Pcl.projitems*{bc3c1d57-2df4-4945-b8ee-d0fee11dd0fa}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteSDK-Pcl\MapSuiteSDK-Pcl.projitems*{bc3c1d57-2df4-4945-b8ee-d0fee11dd0fa}*SharedItemsImports = 4
-		..\..\SourceCode\MapSuite10.0\MapSuite\MapSuite\MapSuite\MapSuiteSDKShared-Platform\MapSuiteSDKShared-Platform.projitems*{bc3c1d57-2df4-4945-b8ee-d0fee11dd0fa}*SharedItemsImports = 4
-	EndGlobalSection
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Evaluation|Any CPU = Evaluation|Any CPU
@@ -41,26 +24,6 @@ Global
 		{A25D7400-9F13-45A9-A8D0-94A0B136D378}.PRODUCTION|Any CPU.Build.0 = Release|Any CPU
 		{A25D7400-9F13-45A9-A8D0-94A0B136D378}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A25D7400-9F13-45A9-A8D0-94A0B136D378}.Release|Any CPU.Build.0 = Release|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Evaluation|Any CPU.ActiveCfg = PRODUCTION|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Evaluation|Any CPU.Build.0 = PRODUCTION|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Full|Any CPU.ActiveCfg = PRODUCTION|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Full|Any CPU.Build.0 = PRODUCTION|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.PRODUCTION|Any CPU.ActiveCfg = PRODUCTION|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.PRODUCTION|Any CPU.Build.0 = PRODUCTION|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{BC3C1D57-2DF4-4945-B8EE-D0FEE11DD0FA}.Release|Any CPU.Build.0 = Release|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Evaluation|Any CPU.ActiveCfg = Evaluation|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Evaluation|Any CPU.Build.0 = Evaluation|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Full|Any CPU.ActiveCfg = Full|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Full|Any CPU.Build.0 = Full|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.PRODUCTION|Any CPU.ActiveCfg = PRODUCTION|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.PRODUCTION|Any CPU.Build.0 = PRODUCTION|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{37A6B130-2F59-45CF-B064-044EEA5C18E4}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
