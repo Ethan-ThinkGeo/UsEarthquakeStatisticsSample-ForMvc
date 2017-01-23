@@ -157,19 +157,19 @@ namespace ThinkGeo.MapSuite.EarthquakeStatistics.Controllers
 
         private void AddBaseMapLayers(Map Map1)
         {
-            WorldMapKitWmsWebOverlay worldMapKitRoadOverlay = new WorldMapKitWmsWebOverlay("World Map Kit Road");
-            worldMapKitRoadOverlay.Projection = Mvc.WorldMapKitProjection.SphericalMercator;
-            worldMapKitRoadOverlay.MapType = Mvc.WorldMapKitMapType.Road;
+            WorldStreetsAndImageryOverlay worldMapKitRoadOverlay = new WorldStreetsAndImageryOverlay("World Map Kit Road");
+            worldMapKitRoadOverlay.Projection = WorldStreetsAndImageryProjection.SphericalMercator;
+            worldMapKitRoadOverlay.MapType = WorldStreetsAndImageryMapType.Road;
             Map1.CustomOverlays.Add(worldMapKitRoadOverlay);
 
-            WorldMapKitWmsWebOverlay worldMapKitAerialOverlay = new WorldMapKitWmsWebOverlay("World Map Kit Aerial");
-            worldMapKitAerialOverlay.Projection = Mvc.WorldMapKitProjection.SphericalMercator;
-            worldMapKitAerialOverlay.MapType = Mvc.WorldMapKitMapType.Aerial;
+            WorldStreetsAndImageryOverlay worldMapKitAerialOverlay = new WorldStreetsAndImageryOverlay("World Map Kit Aerial");
+            worldMapKitAerialOverlay.Projection = WorldStreetsAndImageryProjection.SphericalMercator;
+            worldMapKitAerialOverlay.MapType = WorldStreetsAndImageryMapType.Aerial;
             Map1.CustomOverlays.Add(worldMapKitAerialOverlay);
 
-            WorldMapKitWmsWebOverlay worldMapKitAerialWithLabelsOverlay = new WorldMapKitWmsWebOverlay("World Map Kit Aerial With Labels");
-            worldMapKitAerialWithLabelsOverlay.Projection = Mvc.WorldMapKitProjection.SphericalMercator;
-            worldMapKitAerialWithLabelsOverlay.MapType = Mvc.WorldMapKitMapType.AerialWithLabels;
+            WorldStreetsAndImageryOverlay worldMapKitAerialWithLabelsOverlay = new WorldStreetsAndImageryOverlay("World Map Kit Aerial With Labels");
+            worldMapKitAerialWithLabelsOverlay.Projection = WorldStreetsAndImageryProjection.SphericalMercator;
+            worldMapKitAerialWithLabelsOverlay.MapType = WorldStreetsAndImageryMapType.AerialWithLabels;
             Map1.CustomOverlays.Add(worldMapKitAerialWithLabelsOverlay);
 
             OpenStreetMapOverlay openStreetMapOverlay = new OpenStreetMapOverlay("Open Street Map");
