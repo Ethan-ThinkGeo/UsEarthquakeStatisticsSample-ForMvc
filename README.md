@@ -4,6 +4,8 @@
 
 The Earthquake Statistics sample template is a statistical report system for earthquakes that have occurred in the past few years across the United States. It can help you generate infographics and analyze the severely afflicted areas, or used as supporting evidence when recommending measures to minimize the damage in future quakes.
 
+Please refer to [Wiki](http://wiki.thinkgeo.com/wiki/map_suite_desktop_for_wpf) for the details.
+
 ![Screenshot](https://github.com/ThinkGeo/UsEarthquakeStatisticsSample-ForMvc/blob/master/ScreenShot.png)
 
 ### Requirements
@@ -17,9 +19,9 @@ Working...
 
 ### Getting Help
 
-[Map Suite Mvc Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_mvc_edition)
+[Map Suite Mvc Wiki Resources](http://wiki.thinkgeo.com/wiki/map_suite_web_for_mvc)
 
-[Map Suite Mvc Product Description](http://thinkgeo.com/map-suite-developer-gis/mvc-edition/)
+[Map Suite Mvc Product Description](https://thinkgeo.com/ui-controls#web-platforms)
 
 [ThinkGeo Community Site](http://community.thinkgeo.com/)
 
