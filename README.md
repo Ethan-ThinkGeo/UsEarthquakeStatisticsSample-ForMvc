@@ -1,4 +1,4 @@
-# Us Earthquake Statistics Sample
+# Us Earthquake Statistics Sample for Mvc
 
 ### Description
 
