@@ -15,7 +15,38 @@ This sample makes use of the following NuGet Packages
 
 ### About the Code
 
-Working...
+```csharp
+
+LayerOverlay earthquakeOverlay = new LayerOverlay("EarthquakeOverlay");
+            //earthquakeOverlay.TileType = TileType.SingleTile;
+            earthquakeOverlay.IsVisibleInOverlaySwitcher = false;
+            Map1.CustomOverlays.Add(earthquakeOverlay);
+
+            Proj4Projection proj4 = new Proj4Projection();
+            proj4.InternalProjectionParametersString = Proj4Projection.GetDecimalDegreesParametersString();
+            proj4.ExternalProjectionParametersString = Proj4Projection.GetSphericalMercatorParametersString();
+
+            string dataShapefileFilePath = Server.MapPath(ConfigurationManager.AppSettings["statesPathFileName"]);
+
+            EarthquakeHeatFeatureLayer heatLayer = new EarthquakeHeatFeatureLayer(new ShapeFileFeatureSource(dataShapefileFilePath));
+            heatLayer.HeatStyle = new HeatStyle(10, 180, "MAGNITUDE", 0, 12, 100, DistanceUnit.Kilometer);
+            heatLayer.FeatureSource.Projection = proj4;
+            earthquakeOverlay.Layers.Add("Heat Map", heatLayer);
+
+            ShapeFileFeatureLayer pointLayer = new ShapeFileFeatureLayer(dataShapefileFilePath);
+            pointLayer.FeatureSource.Projection = proj4;
+            pointLayer.ZoomLevelSet.ZoomLevel01.DefaultPointStyle = PointStyles.CreateSimpleCircleStyle(GeoColor.StandardColors.Red, 6, GeoColor.StandardColors.White, 1);
+            pointLayer.ZoomLevelSet.ZoomLevel01.ApplyUntilZoomLevel = ApplyUntilZoomLevel.Level20;
+            pointLayer.IsVisible = false;
+            earthquakeOverlay.Layers.Add("Regular Point Map", pointLayer);
+
+            EarthquakeIsoLineFeatureLayer isoLineLayer = new EarthquakeIsoLineFeatureLayer(new ShapeFileFeatureSource(dataShapefileFilePath));
+            isoLineLayer.FeatureSource.Projection = proj4;
+            isoLineLayer.IsVisible = false;
+            earthquakeOverlay.Layers.Add("IsoLines Map", isoLineLayer);
+
+
+```
 
 ### Getting Help
 
@@ -30,7 +61,9 @@ Working...
 ### Key APIs
 This example makes use of the following APIs:
 
-Working...
+- [ThinkGeo.MapSuite.Mvc.LayerOverlay](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.mvc.layeroverlay)
+- [ThinkGeo.MapSuite.Shapes.Proj4Projection](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.shapes.proj4projection)
+- [ThinkGeo.MapSuite.Layers.ShapeFileFeatureLayer](http://wiki.thinkgeo.com/wiki/api/thinkgeo.mapsuite.layers.shapefilefeaturelayer)
 
 ### About Map Suite
 Map Suite is a set of powerful development components and services for the .Net Framework.
